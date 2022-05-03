@@ -1,9 +1,10 @@
 :root {
     --cor-background: #24252A;
     --cor-branco-principal: #FFFFFF;
-    --cor-vermelho-principal: #FF382C;
+    --cor-vermelho-principal: #FF0000;
     --cor-preto-principal: #000000;
-    --cor-busca: #383838;
+    --cor-busca: #54555B;
+    --cor-cinza-produto: #C4C4C4;
     --font-principal: 'poppins';
 }
 
@@ -11,23 +12,25 @@ body {
     background-color: var(--cor-background);
     color: var(--cor-branco-principal);
     font-family: var(--font-principal);
+    margin: 3em;
 }
 
-.container {
-    margin: 2em;
+.container__menu {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-bottom: 2em;
 }
-
 
 .lista__menu {
     display: flex;
     list-style-type: none;
+    align-items: center;
 }
 
 .link__menu {
     text-decoration: none;
     color: var(--cor-branco-principal);
+    font-size: 20px;
     margin-left: 2em;
 }
 
@@ -35,7 +38,6 @@ body {
     align-items: right;
     display: flex;
     justify-content: right;
-    margin-right: 2em;
 }
 
 .input__padrao {
@@ -49,4 +51,17 @@ body {
 
 ::placeholder {
     font-family: var(--font-principal);
+}
+
+.titulo__principal {
+    display: flex;
+    font-size: 125px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.titulo__principal h2 {
+    font-size: 52px;
+    color: var(--cor-vermelho-principal);
+    margin-left: 0.5em;
 }
