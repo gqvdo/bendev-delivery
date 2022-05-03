@@ -3,8 +3,7 @@
     --cor-branco-principal: #FFFFFF;
     --cor-vermelho-principal: #FF0000;
     --cor-preto-principal: #000000;
-    --cor-busca: #54555B;
-    --cor-cinza-produto: #C4C4C4;
+    --cor-cinza-principal: #54555B;
     --font-principal: 'poppins';
 }
 
@@ -13,6 +12,10 @@ body {
     color: var(--cor-branco-principal);
     font-family: var(--font-principal);
     margin: 3em;
+}
+
+#container {
+    margin-bottom: 5em;
 }
 
 .container__menu {
@@ -41,7 +44,7 @@ body {
 }
 
 .input__padrao {
-    background-color: var(--cor-busca);
+    background-color: var(--cor-cinza-principal);
     color: var(--cor-branco-principal);
     border: none;
     outline: none;
@@ -64,4 +67,28 @@ body {
     font-size: 52px;
     color: var(--cor-vermelho-principal);
     margin-left: 0.5em;
+}
+
+.titulo__secundario {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.lista__produtos {
+    display: flex;
+}
+
+.produto__card {
+    background-color: var(--cor-cinza-principal);
+    border-radius: 10px;
+}
+
+.produto__card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.produto__card p{
+    padding: 1em;
 }
