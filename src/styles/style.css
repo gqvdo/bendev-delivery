@@ -28,13 +28,13 @@ body {
     display: flex;
     list-style-type: none;
     align-items: center;
+    gap: 2em;
 }
 
 .link__menu {
     text-decoration: none;
     color: var(--cor-branco-principal);
     font-size: 20px;
-    margin-left: 2em;
 }
 
 .campo__busca {
@@ -70,18 +70,23 @@ body {
 }
 
 .titulo__secundario {
+    display: inline-block;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 1em;
+    border-bottom: 3px solid white;
 }
 
 .lista__produtos {
     display: flex;
+    gap: 2em;
 }
 
 .produto__card {
     background-color: var(--cor-cinza-principal);
     border-radius: 10px;
+    opacity: 80%;
+    transition: 1s;
 }
 
 .produto__card img{
@@ -91,4 +96,9 @@ body {
 
 .produto__card p{
     padding: 1em;
+}
+
+.produto__card:hover {
+    opacity: 100%;
+    font-size: 1.05em;
 }
