@@ -18,7 +18,7 @@ body {
     margin: 3em;
 }
 
-#container, .lista__menu {
+#menu, #header, .lista__menu {
     display: flex;
     justify-content: space-between;
 }

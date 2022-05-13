@@ -15,7 +15,7 @@
 
     <body>
         <header id="header">
-            <nav id="container">
+            <nav id="menu">
                 <ul class="lista__menu">
                     <li>
                         <a href="https://www.google.com" class="link__menu">Produtos</a>
@@ -24,11 +24,11 @@
                         <a href="https://www.google.com" class="link__menu">Menu</a>
                     </li>
                 </ul>
-
-                <form>
-                    <input type="search" id="busca" class="input__padrao" placeholder="Buscar">
-                </form>
             </nav>
+            
+            <form>
+                <input type="search" id="busca" class="input__padrao" placeholder="Buscar" onkeyup="filtrar()">
+            </form>
         </header>
 
         <main id="main">
@@ -54,10 +54,9 @@
 </html>
 
 <!--
-    Mudar header (FEITO)
-    Mudar form (FEITO)
-    Mudar IDs para serem unicos. (FEITO)
-    tirar margin do body e colocar em cada uma das tags (FEITO)
-    Checar como que o footer ficou 100% da tela mesmo n usando width
+    Tirar form da navegação
+    mudar de id container para id menu
+
+    pega o elemente, e faz o addeventlistener (google onchange input / onekeyup**)
 
 -->
