@@ -8,12 +8,7 @@ window.onload = () => {
             return res.json();
         });
         response.map((produto) => {
-            containerLista.innerHTML += `<div class="produto_item">
-                                            <img src="${produto.productImage}">
-                                            <div class="produto_item_text">
-                                                <h2>${produto.productName}</h2>
-                                            </div>
-                                        </div>`
+            containerLista.innerHTML += padraoDiv(produto);
         });
         produtos = response;
     }
@@ -31,11 +26,26 @@ function filtrar() {
 
     containerLista.innerHTML = "";
     filtrados.map((produto) => {
-        containerLista.innerHTML += `<div class="produto_item">
-                                        <img src="${produto.productImage}">
-                                        <div class="produto_item_text">
-                                            <h2>${produto.productName}</h2>
-                                        </div>
-                                    </div>`
+        containerLista.innerHTML += padraoDiv(produto);
     });
 };
+
+function padraoDiv(produto) {
+    return `<a class="produto_item" href="./produto.html?name=${produto.productName}">
+    <img src="${produto.productImage}">
+    <div class="produto_item_text">
+        <h2>${produto.productName}</h2>
+    </div>
+</a>`
+}
+
+// function pageProduto() {
+//     produtos.map((produto) => {
+//         containerLista.innerHTML += `<a class="produto_item" href="./produto.html?name=${produto.productName}">
+//                                         <img src="${produto.productImage}">
+//                                         <div class="produto_item_text">
+//                                             <h2>${produto.productName}</h2>
+//                                         </div>
+//                                     </a>`
+//     });
+// }
